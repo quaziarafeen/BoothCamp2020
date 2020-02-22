@@ -14,7 +14,7 @@ public class TestHomepage extends HomePage {
         hp=PageFactory.initElements(driver, HomePage.class);
     }
 
-    // @Test
+    @Test(priority = 1)
     public static void clickOnRadioButton() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -23,7 +23,7 @@ public class TestHomepage extends HomePage {
 
     }
 
-     //@Test
+     @Test(priority = 2)
     public static void clickOnSelectButton() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -32,7 +32,7 @@ public class TestHomepage extends HomePage {
 
     }
 
-    //@Test
+    @Test(priority = 3)
     public static void clickOnSelectMultiButton() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -41,7 +41,7 @@ public class TestHomepage extends HomePage {
 
     }
 
-    //@Test
+    @Test(priority = 4)
     public static void clickOnCheckButton() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -49,7 +49,7 @@ public class TestHomepage extends HomePage {
         sleepFor(3);
 
     }
-    @Test
+    @Test(priority = 5)
     public static void takeScreenShotTaken() throws InterruptedException, IOException {
         getInElement();
         sleepFor(2);
@@ -58,7 +58,7 @@ public class TestHomepage extends HomePage {
 
     }
 
-    //@Test
+    @Test(priority = 6)
     public static void newWindowOpen() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -67,7 +67,7 @@ public class TestHomepage extends HomePage {
         sleepFor(3);
     }
 
-    //@Test
+    @Test(priority = 7)
     public static void newWindowOpen1() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -76,7 +76,7 @@ public class TestHomepage extends HomePage {
         sleepFor(3);
 
     }
-    //@Test
+    @Test(priority = 8)
     public static void alertHandleAccept() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -86,7 +86,7 @@ public class TestHomepage extends HomePage {
 
     }
 
-    //@Test
+    @Test(priority = 9)
     public static void alertHandleCancle() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -94,7 +94,7 @@ public class TestHomepage extends HomePage {
         sleepFor(2);
         cancelAlert();
     }
-    //@Test
+    @Test(priority = 10)
     public static void getTable() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -103,7 +103,7 @@ public class TestHomepage extends HomePage {
         sleepFor(2);
 
     }
-    //@Test
+    @Test(priority = 11)
     public static void mouseHover() throws InterruptedException {
         getInElement();
         sleepFor(2);
@@ -111,7 +111,7 @@ public class TestHomepage extends HomePage {
         sleepFor(2);
 
     }
-   // @Test
+   @Test(priority = 12)
     public void testiFrame() throws IOException, InterruptedException {
         getInElement();
         scrollUpDown(4000);

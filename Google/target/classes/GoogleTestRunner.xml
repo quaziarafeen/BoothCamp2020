@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Chrome Automation Script" parallel="false">
+<suite name="Chrome Automation Script"  parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
@@ -15,7 +15,7 @@
     <parameter name="url" value="https://www.google.com/"/>
     <test name="Chrome Home">
         <classes>
-            <class name="Test.TestPage"/>
+            <class name="TestGoogle.TestPage"/>
 <!--            <class name="testhome.TestFooterPage"/>-->
 <!--            <class name="testhome.TestHomePage"/>-->
 <!--            <class name="testhome.TestManagePolicyPage"/>-->
@@ -26,7 +26,28 @@
 
     </test>
 
+<!--    <parameter name="useCloudEnv" value="false"/>-->
+<!--    <parameter name="cloudEnvName" value="browserstack"/>-->
+<!--    &lt;!&ndash;<parameter name="cloudEnvName" value="saucelab"/>&ndash;&gt;-->
+<!--    <parameter name="os" value="windows"/>-->
+<!--    &lt;!&ndash;<parameter name="os" value="OS X"/>&ndash;&gt;-->
+<!--    <parameter name="os_version" value="10"/>-->
+<!--    &lt;!&ndash;<parameter name="os_version" value="10.14.5"/>&ndash;&gt;-->
+<!--    <parameter name="browserName" value="Firefox"/>-->
+<!--    <parameter name="browserVersion" value="73"/>-->
+<!--    <parameter name="url" value="https://www.google.com/"/>-->
+<!--    <test name="Chrome Home1">-->
+<!--        <classes>-->
+<!--            <class name="TestGoogle.TestPage"/>-->
+<!--            &lt;!&ndash;            <class name="testhome.TestFooterPage"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <class name="testhome.TestHomePage"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <class name="testhome.TestManagePolicyPage"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <class name="testhome.TestSelectPage"/>&ndash;&gt;-->
 
+
+<!--        </classes>-->
+
+<!--    </test>-->
 <!--    <parameter name="useCloudEnv" value="false"/>-->
 <!--    <parameter name="cloudEnvName" value="browserstack"/>-->
 <!--    &lt;!&ndash;<parameter name="cloudEnvName" value="saucelab"/>&ndash;&gt;-->
